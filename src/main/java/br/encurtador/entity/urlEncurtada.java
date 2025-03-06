@@ -24,18 +24,10 @@ public class urlEncurtada {
     private String urlOriginal;
 
     @Column
-    private String modeloCurto;
+    private String codigoCurto;
 
-    public urlEncurtada(String urlOriginal, String modeloCurto) {
+    public urlEncurtada(String urlOriginal, String codigoCurto) {
         this.urlOriginal = urlOriginal;
-        this.modeloCurto = modeloCurto;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
+        this.codigoCurto = codigoCurto;
     }
 }
