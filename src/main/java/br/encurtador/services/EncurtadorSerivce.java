@@ -24,6 +24,6 @@ public class EncurtadorSerivce
     }
 
     public Optional<String> obterURLOriginal(String urlCurta){
-        return urlEncurtadaRepos.findCodigoCurto(urlCurta).map(urlEncurtada::getUrlOriginal);
+        return urlEncurtadaRepos.findByCodigoCurto(urlCurta).map(urlEncurtada::getUrlOriginal);
     }
 }
